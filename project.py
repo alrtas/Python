@@ -22,16 +22,16 @@ print(choice) #debug
 #------Class, new student
 
 class newStudy:
-    def __init__(self, name, age, address, MathGrade, PhyGrade, IngGrade):
+    def __init__(self, name, age, address, mathgrade, phygrade, inggrade):
         self.name = name
         self.age = age
         self.address = address
-        self.MathGrade = MathGrade
-        self.IngGrade = IngGrade
-        self.PhyGrade = PhyGrade
+        self.MathGrade = mathgrade
+        self.IngGrade = inggrade
+        self.PhyGrade = phygrade
 
-        sumGrade = IngGrade+PhyGrade+MathGrade
-        grade = sumGrade/3
+        sumgrade = inggrade+phygrade+mathgrade
+        grade = sumgrade/3
 
         self.grade = grade
 
@@ -39,7 +39,7 @@ class newStudy:
 
     def getName(self):
         print(" ")
-        print ("The name of the student is: "+ self.name)
+        print ("The name of the student is: " + self.name)
     def getAge(self):
         print(" ")
         print ("The age of the student " + self.name + "  is: "+ self.age)
@@ -65,7 +65,7 @@ class newStudy:
 if choice == 1:
     print(" ")
     print(" ")
-    print ("Sing up a new student") #debug
+    print ("Sing up a new student")  #debug
     studentName = input("Student name: ")
     studentAge = input("Student age:  ")
     studentAddress = input("Student ZIP CODE:  ")
