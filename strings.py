@@ -1,16 +1,13 @@
-name = input("Type your name ")
-if name.isnumeric():
-    print("Somente letras..")
-    exit()
+name = str(input("Type your name "))
+age = int(input("Type your age: "))
+
+
+print("Hi, " +name.title()+", you have "+str(age)+" old")
+if age > 18:
+    print("And you can see any movie")
+elif age <  18 and age > 13:
+    print("And you can see a PG-13 movie")
 else:
-    print(name.title())
+    print("And you can only see PG movies")
 
-age = input("Type your age: ")
-if age.isnumeric():
-    print(age)
-else:
-    print("Somente numeros..")
-    exit()
-
-
-print("Hi, " +name+", you have "+age+" old")
+exit()
