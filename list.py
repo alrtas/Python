@@ -38,3 +38,4 @@ print(places)
 places.sort(reverse=True)
 print(places)
 print(len(places))
+
